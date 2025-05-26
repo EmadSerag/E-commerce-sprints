@@ -1,0 +1,99 @@
+/* global style */
+:root {
+  --primary-color: #d2c3a7;
+  --secondary-color: #969c74;
+  --text-color: #ffffff;
+  --background-color: #f6f6f6;
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  transition: all 0.2s linear;
+}
+
+@font-face {
+  font-family: "cairo";
+  src: url("../assets/Cairo-VariableFont_wght.ttf");
+}
+html {
+  background-color: #f6f6f6;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background: #263238;
+}
+
+body {
+  font-family: "cairo";
+
+}
+/* Animation Title Section */
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: #263238;
+  position: relative;
+  margin-bottom:20px ;
+  ;}
+.section-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 130px;
+  background-color: #44bb6a;
+  top: 50px;
+  left: auto;
+  border-radius: 20px;
+  animation-name: right-left;
+  animation-duration: 2.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.nav-link{
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: var(--primary-color) 2px solid;
+  margin-left: 5px;
+}
+#carouselExampleIndicators img{
+  height: 83vh !important;
+}
+.login input{
+  width: 150%;
+}
+@keyframes right-left {
+  0% {
+    width: 130px;
+  }
+  50% {
+    width: 100px;
+  }
+  100% {
+    width: 130px;
+  }
+}
+
+.login{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+

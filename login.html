@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- normalize file  -->
+	<link rel="stylesheet" href="./css/normalize.css" />
+	<!-- font-awesome file  -->
+	<link rel="stylesheet" href="./css/all.min.css" />
+	<!-- bootstrap file  -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<!-- custom css file  -->
+	<link rel="stylesheet" href="./css/style.css" />
+
+	<!-- title my site  -->
+	<title>E-commece  </title>
+</head>
+
+<body>
+	<!-- start Login  -->
+	<div class="login mx-auto  w-75" id="login">
+		<!-- login header -->
+		<div class="login-header section-title">
+			<h1>Login</h1>
+		</div>
+<!-- show Tabs  -->
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+					type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sign Up</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+					type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Sign In</button>
+			</li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+				tabindex="0">
+				<form action="" id="register-form">
+					<div class="form-group">
+						<label for="regName">Full Name</label>
+						<input type="text" class="form-control " id="regName" placeholder="Enter Full Name" />
+						<label for="regEmail">Email</label>
+						<input type="email" class="form-control " id="regEmail" placeholder="Enter your email" />
+						<label for="regPassword" class="mt-1">Password</label>
+						<input type="password" id="regPassword" class="form-control"
+							placeholder="Enter your password" />
+					</div>
+					<button type="submit" class="btn btn-success mt-1">Register</button>
+				</form>
+			</div>
+			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+				tabindex="0">
+				<div class="login-body">
+					<form action="" id="login-form">
+						<div class="form-group">
+							<label for="loginEmail">Email</label>
+							<input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" />
+							<label for="loginPassword" class="mt-1">Password</label>
+							<input type="password" id="loginPassword" class="form-control"
+								placeholder="Enter your password" />
+						</div>
+						<span class="btn btn-success mt-1" onclick="alert('log');">Login</span>
+					</form>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+	 <!-- bootstap js file   -->
+		<script src="./js/bootstrap.bundle.min.js"></script>
+	<!-- custom file  -->
+		<script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
