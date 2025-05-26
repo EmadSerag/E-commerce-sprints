@@ -1,0 +1,112 @@
+:root{
+    --black-color:#323233;
+    --white-color:#fdfdfd;
+}
+
+body{
+    color:var(--white-color);
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+.container{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#navbarBtn{
+    display: none;
+}
+a.logo,
+#searchBtn,
+#navbarBtn{
+    font-size: 1.2rem;
+    color:#ddd;
+    cursor: pointer;
+}
+.logo{
+    color: red;
+}
+.navgation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.navgation ul li a{
+    color: #ddd;
+      position: relative;
+  font-size: 1em;
+  margin-right: 35px;
+  transition: .3s ease-in-out;
+  text-decoration: none;
+    }
+.navgation ul {
+    padding: 0px;
+    margin: 0px;
+
+}
+.navgation ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background: #ddd;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+  border-radius: 40px;
+}
+.navgation ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.carousel-item{
+    width: 100%;
+    height: 90vh;
+} 
+
+/* responsive navgation  */
+@media (max-width: 909px) {
+    #navbarBtn{
+        display: block;
+    }  
+    .navgation{
+        position:absolute;
+        display: flex;
+        top: 60px;
+        left: -100%; 
+        height: calc(100vh - 80px);
+        width: 100%;
+        background-color: var(--black-color);
+        transition:all .5s ;
+
+
+    }
+    .navgation ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    .show{
+        left: 0%;
+        z-index: 1000;
+    }
+}
