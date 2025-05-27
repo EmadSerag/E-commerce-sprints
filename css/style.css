@@ -1,10 +1,8 @@
-/* global style */
-:root {
-  --primary-color: #d2c3a7;
-  --secondary-color: #969c74;
-  --text-color: #ffffff;
-  --background-color: #f6f6f6;
+/* varibale color  */
+:root{
+  --dark-color:#263238;
 }
+/* global style */
 * {
   padding: 0;
   margin: 0;
@@ -13,13 +11,17 @@
   outline: none;
   border: none;
   text-decoration: none;
-
   transition: all 0.2s linear;
 }
 /* Add Cairo Font */
 @font-face {
   font-family: "cairo";
   src: url("../assets/Cairo-VariableFont_wght.ttf");
+}
+body {
+  font-family: "cairo";
+  overflow: hidden;
+
 }
 /* Global Style */
 html {
@@ -31,21 +33,16 @@ html::-webkit-scrollbar-track {
   background: transparent;
 }
 html::-webkit-scrollbar-thumb {
-  background: #263238;
+  background:var(--dark-color);
 }
 
-body {
-  font-family: "cairo";
-  overflow: hidden;
-
-}
 /* Animation Title Section */
 .section-title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  color: #263238;
+  color: var(--dark-color);
   position: relative;
   margin-bottom:20px ;
   ;}
@@ -54,7 +51,7 @@ body {
   position: absolute;
   height: 4px;
   width: 130px;
-  background-color: #212529;
+  background-color: var(--dark-color);
   top: 50px;
   left: auto;
   border-radius: 20px;
@@ -78,6 +75,8 @@ body {
 .login input{
   width: 100%;
 }
+/* Animation Title Section */
+
 @keyframes right-left {
   0% {
     width: 130px;
@@ -89,7 +88,7 @@ body {
     width: 130px;
   }
 }
-
+/* Login style */
 .login{
   width: 100%;
   height: 100vh;
