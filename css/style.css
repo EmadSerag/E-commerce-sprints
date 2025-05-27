@@ -16,11 +16,12 @@
 
   transition: all 0.2s linear;
 }
-
+/* Add Cairo Font */
 @font-face {
   font-family: "cairo";
   src: url("../assets/Cairo-VariableFont_wght.ttf");
 }
+/* Global Style */
 html {
   background-color: #f6f6f6;
   overflow-x: hidden;
@@ -35,6 +36,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   font-family: "cairo";
+  overflow: hidden;
 
 }
 /* Animation Title Section */
@@ -61,6 +63,7 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+/* Navgation Style */
 .nav-link{
   color: var(--secondary-color);
   font-size: 1.1rem;
@@ -68,11 +71,12 @@ body {
   border-bottom: var(--primary-color) 2px solid;
   margin-left: 5px;
 }
+/* Carousel Style  */
 #carouselExampleIndicators img{
   height: 83vh !important;
 }
 .login input{
-  width: 150%;
+  width: 100%;
 }
 @keyframes right-left {
   0% {

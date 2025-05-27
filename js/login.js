@@ -2,8 +2,12 @@
 const loginSection = document.getElementById('login');
 const registerForm = document.getElementById('register-form');
 const loginForm = document.getElementById('login-form');
-
-
+	const adminUser ={
+		email: "emad@admin.com",
+		password: "123"
+	}
+	localStorage.setItem("adminUser", JSON.stringify(adminUser));
+	let userAdmin = JSON.parse(localStorage.getItem("adminUser"));
 // pull Data in Elements 
 registerForm.addEventListener('submit', async (e) => {
 	e.preventDefault();
@@ -39,13 +43,16 @@ loginForm.addEventListener('submit', async (e) => {
 		alert('Please fill in all fields 🥺');
 		return;
 	}
-	if(!userData ||  email !== userData.email || password !== userData.password) {
-		alert('Invalid email or password 🥺');
-	}else{
-		alert('Login successful! 🎉');
+
+	if(userData && email === userData.email && password === userData.password) {
+		alert('Welcome back ' + userData.name + '! 🎉');
 		localStorage.setItem("isLoggedIn", true);
-	window.location.href = 'home.html';
-		
+		window.location.href = 'home.html';
+	}else if( email===adminUser.email && password === adminUser.password) {
+		alert('Welcome Admin! 🎉');
+	window.location.href = 'admin.html';
+	}else{
+		alert('Invalid email or password 🥺');
 		
 	}
 })
