@@ -16,12 +16,22 @@ This project represents a basic e-commerce front-end, likely built as part of a 
 * **Product Listing:** A "Products" heading indicates a section dedicated to displaying various items.
 * **Navigation Buttons:** "Previous" and "Next" buttons suggest pagination or navigation within product listings.
 
-## Login 
+## Sign up as a user 
 ![image](https://github.com/user-attachments/assets/383d8fb7-f3ce-46f1-9737-578c41d30bc7)
-### write Sign up 
+###  Sign up 
 - Full Name
 - Email
 - Password
+  ### sign in
+  ![image](https://github.com/user-attachments/assets/55c25626-a253-47c8-a36a-82d5666e06b2)
+### sign in
+  - Email
+  - Password
+Sign in as a Super Admin
+![image](https://github.com/user-attachments/assets/f57f85dc-a391-48b0-8f88-406fe6b0b938)
+### sign in 
+- Email => emad@admin.com
+- Password =>123
 ## Access the Website
 
 You can view the live homepage of this project here:
