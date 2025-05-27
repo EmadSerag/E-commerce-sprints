@@ -3,10 +3,9 @@ const navbarBtn = document.getElementById("navbarBtn");
 const nav = document.getElementById('navgation');
 const filter = document.getElementById('filter');
 const productsContainer = document.getElementById('products-container');
-
 // Naviagtion Button 
 navbarBtn.addEventListener('click', function () {
-    nav.classList.toggle('show')
+	nav.classList.toggle('show')
 })
 // Logout Button 
 document.getElementById('logout').addEventListener('click', function () {
@@ -20,18 +19,18 @@ document.getElementById('logout').addEventListener('click', function () {
 let allProducts = [];
 
 async function fetchData() {
-		try {
+	try {
 
-		let resp =await fetch ('https://fakestoreapi.com/products');
-		let data = await resp.json(); 
+		let resp = await fetch('https://fakestoreapi.com/products');
+		let data = await resp.json();
 
 		// repeat products to get 100 product
-		allProducts= Array(100).fill(data).flat();
+		allProducts = Array(100).fill(data).flat();
 
 		const categories = [...new Set(allProducts.map(product => product.category))];
 		filterProducts(categories);
 		displayProducts(allProducts);
-	} 
+	}
 
 	// catch Error 
 
@@ -80,10 +79,10 @@ function displayProducts(products) {
 
 		const productCard = document.createElement('div');
 
-		productCard.className = 'col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center';
+		productCard.className = 'col-12 col-md-6 col-lg-4 mb-4 d-flex justify-content-center ';
 		// display cards 
 		productCard.innerHTML = `
-		<div class="card" style="width: 18rem; height:27rem;">
+		<div  class="card" style="width: 18rem; height:27rem;">
 			<img src="${product.image}" alt="${product.title} " class="card-img-top h-50" >
 			 <div class="card-body">
 			 <h5 class="card-title ">${product.title}</h5>
@@ -97,3 +96,4 @@ function displayProducts(products) {
 	});
 }
 fetchData();
+
