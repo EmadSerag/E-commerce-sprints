@@ -27,7 +27,7 @@ This project represents a basic e-commerce front-end, likely built as part of a 
 ### sign in
   - Email
   - Password
-Sign in as a Super Admin
+## Sign in as a Super Admin
 ![image](https://github.com/user-attachments/assets/f57f85dc-a391-48b0-8f88-406fe6b0b938)
 ### sign in 
 - Email => emad@admin.com
