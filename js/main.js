@@ -9,7 +9,7 @@ navbarBtn.addEventListener('click', function () {
     nav.classList.toggle('show')
 })
 // Logout Button 
-document.getElementById('login').addEventListener('click', function () {
+document.getElementById('logout').addEventListener('click', function () {
 	localStorage.removeItem("user");
 	// Page redirection 
 	window.location.href = "./index.html";
