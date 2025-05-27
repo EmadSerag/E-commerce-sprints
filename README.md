@@ -36,6 +36,11 @@ This project represents a basic e-commerce front-end, likely built as part of a 
 
 You can view the live homepage of this project here:
 [E-commerce Sprints Homepage](https://emadserag.github.io/E-commerce-sprints/home.html)
+### Hero Section 
+![Uploading image.png…]()
+
+### Filter Products
+![Uploading image.png…]()
 
 ## Technologies (Inferred)
 
