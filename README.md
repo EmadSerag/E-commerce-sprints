@@ -1,4 +1,4 @@
-# E-commerce Sprints
+![image](https://github.com/user-attachments/assets/74598ac6-6f98-4e8a-aaa7-77b6be1d9347)# E-commerce Sprints
 
 This repository hosts a conceptual e-commerce website, primarily showcasing a product listing homepage.
 
@@ -36,11 +36,12 @@ This project represents a basic e-commerce front-end, likely built as part of a 
 
 You can view the live homepage of this project here:
 [E-commerce Sprints Homepage](https://emadserag.github.io/E-commerce-sprints/home.html)
-### Hero Section 
-![Uploading image.png…]()
 
-### Filter Products
-![Uploading image.png…]()
+## Hero Section
+![image](https://github.com/user-attachments/assets/09f0ace1-8f6d-4440-9621-a7b8d1c1d892)
+
+## Filter Proudcts
+![image](https://github.com/user-attachments/assets/fae979de-784b-462e-b786-0d41091b726c)
 
 ## Technologies (Inferred)
 
@@ -49,5 +50,3 @@ Based on a typical web development project for an e-commerce front-end, it likel
 * HTML (for structure)
 * CSS (for styling)
 * JavaScript (for interactive elements like navigation or potential product filtering - though not explicitly confirmed by Browse)
-
----
