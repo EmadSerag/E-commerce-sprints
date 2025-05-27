@@ -81,7 +81,6 @@ a.logo,
     width: 100%;
     height: 90vh;
 } 
-
 /* responsive navgation  */
 @media (max-width: 909px) {
     #navbarBtn{
