@@ -74,8 +74,6 @@ a.logo,
         width: 100%;
         background-color: var(--black-color);
         transition:all .5s ;
-
-
     }
     .navgation ul{
         display: flex;
